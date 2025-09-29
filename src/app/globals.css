@@ -1,0 +1,396 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+/* Horizontal marquee animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Marquee animation utilities */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee 20s linear infinite reverse;
+}
+.animate-marquee-vertical {
+  animation: marquee-vertical 20s linear infinite;
+}
+
+
+/* Slide & shade animation utilities */
+@layer utilities {
+  .animate-slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  .animate-slide-in-top {
+    animation: slideInTop 1s ease-out forwards;
+  }
+  .animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+  .animate-shade-left {
+    animation: shadeLeft 1s ease-out forwards;
+  }
+  .animate-shade-top {
+    animation: shadeTop 1s ease-out forwards;
+  }
+  .animate-shade-right {
+    animation: shadeRight 1s ease-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeLeft {
+    from {
+      background: linear-gradient(to right, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeTop {
+    from {
+      background: linear-gradient(to bottom, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeRight {
+    from {
+      background: linear-gradient(to left, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* @keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 20s linear infinite;
+}
+
+.motion-paused {
+  animation-play-state: paused !important;
+} */
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 25s linear infinite;
+}
+
+/* Optional alternating marquee setup usage:
+  <div class="animate-marquee">Row 1</div>
+  <div class="animate-marquee-reverse">Row 2</div>
+  <div class="animate-marquee">Row 3</div>
+  ...
+*/
+.motion-paused {
+  animation-play-state: paused !important;
+}
+
+
+
+/* Horizontal marquee animations */
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+/* Marquee animation utilities */
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee 20s linear infinite reverse;
+}
+.animate-marquee-vertical {
+  animation: marquee-vertical 20s linear infinite;
+}
+
+
+/* Slide & shade animation utilities */
+@layer utilities {
+  .animate-slide-in-left {
+    animation: slideInLeft 1s ease-out forwards;
+  }
+  .animate-slide-in-top {
+    animation: slideInTop 1s ease-out forwards;
+  }
+  .animate-slide-in-right {
+    animation: slideInRight 1s ease-out forwards;
+  }
+  .animate-shade-left {
+    animation: shadeLeft 1s ease-out forwards;
+  }
+  .animate-shade-top {
+    animation: shadeTop 1s ease-out forwards;
+  }
+  .animate-shade-right {
+    animation: shadeRight 1s ease-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeLeft {
+    from {
+      background: linear-gradient(to right, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeTop {
+    from {
+      background: linear-gradient(to bottom, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes shadeRight {
+    from {
+      background: linear-gradient(to left, #000 80%, transparent);
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+.animate-marquee-reverse {
+  animation: marquee-reverse 25s linear infinite;
+}
+
+
+.motion-paused {
+  animation-play-state: paused !important;
+}
+
+
+
+
+/* 👇 Pehli line: Left to Right */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 15s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 15s linear infinite;
+}
+
+
+/* 👇 Pause when hover */
+.motion-paused {
+  animation-play-state: paused !important;
+}
+
+

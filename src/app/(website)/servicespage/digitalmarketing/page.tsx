@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import DigitalMarketingServices from "../digitalmarketing/page";
+import DigitalMarketingServices from "../../components/digitalmarketingservices";
 
 export default function DigitalMarketing() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import RoboticAutomation from "../roboticprocess/page";
+import RoboticAutomation from "../../components/roboticautomation";
 
 export default function RoboticProcess() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import VirtualAssistantServices from "../virtualassistant/page";
+import VirtualAssistantServices from "../../components/virtualassistantservices";
 
 
 export default function VirtualAssistant() {

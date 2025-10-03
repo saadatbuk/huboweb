@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import SupportOperationalServices from "../supportoperational/page";
+import SupportOperationalServices from "../../components/supportoperationalservices";
 
 export default function SupportOperational() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../../components/hero";
-import CrmAutomationService from "../crmautomation/page";
+import CrmAutomationService from "../../components/crmautomationservice";
 
 export default function CrmAutomation() {
   return (
